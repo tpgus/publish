@@ -1,0 +1,33 @@
+@import '../../styles/common.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 64px;
+  border: 1px solid black;
+
+  > .left {
+    display: flex;
+    align-items: center;
+
+    > .nav-link {
+      display: flex;
+      margin-left: 12px;
+
+      > .link {
+        &:not(:first-child) {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+  > .right {
+    display: flex;
+    align-items: center;
+
+    > .menu {
+      margin-left: 16px;
+    }
+  }
+}
